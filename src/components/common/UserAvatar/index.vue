@@ -12,17 +12,12 @@ const userInfo = computed(() => userStore.userInfo)
 
 <template>
   <div class="flex items-center">
-    <div class="w-10 h-10 overflow-hidden rounded-full">
+    <div class="w-10 h-10 text-4xl overflow-hidden rounded-full">
       <template v-if="isString(userInfo.avatar) && userInfo.avatar.length > 0">
-        <NAvatar
-          size="large"
-          round
-          :src="userInfo.avatar"
-          :fallback-src="defaultAvatar"
-        />
+       {{ userInfo.avatar}}
       </template>
       <template v-else>
-       <div class="w-10 h-10 text-4xl overflow-hidden rounded-full">🪐</div>
+      🪐
       </template>
     </div>
     <div class="ml-2">
