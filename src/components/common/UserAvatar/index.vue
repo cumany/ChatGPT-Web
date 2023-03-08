@@ -2,11 +2,11 @@
 import { computed } from 'vue'
 import { NAvatar } from 'naive-ui'
 import { useUserStore } from '@/store'
-import defaultAvatar from '@/assets/avatar.jpg'
+ 
 import { isString } from '@/utils/is'
 
 const userStore = useUserStore()
-
+const defaultAvatar ='🪐'
 const userInfo = computed(() => userStore.userInfo)
 </script>
 
@@ -27,7 +27,7 @@ const userInfo = computed(() => userStore.userInfo)
     </div>
     <div class="ml-2">
       <h2 class="font-bold text-md">
-        {{ userInfo.name ?? 'ChenZhaoYu' }}
+        {{ userInfo.name ?? '东哥' }}
       </h2>
       <p class="text-xs text-gray-500">
         <span
