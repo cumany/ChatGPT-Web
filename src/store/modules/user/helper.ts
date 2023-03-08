@@ -16,7 +16,7 @@ export function defaultSetting(): UserState {
   return {
     userInfo: {
       avatar: '🪐',
-      name: '东哥',
+      name: 'Chat AI',
       description: 'Star on <a href="https://github.com/cumany" class="text-blue-500" target="_blank" >Github</a>',
     },
   }
