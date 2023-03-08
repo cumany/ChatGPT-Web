@@ -2,11 +2,11 @@
 import { computed } from 'vue'
 import { NAvatar } from 'naive-ui'
 import { useUserStore } from '@/store'
- 
+
 import { isString } from '@/utils/is'
 
 const userStore = useUserStore()
-const defaultAvatar ='🪐'
+
 const userInfo = computed(() => userStore.userInfo)
 </script>
 
@@ -22,12 +22,12 @@ const userInfo = computed(() => userStore.userInfo)
         />
       </template>
       <template v-else>
-        <NAvatar size="large" round :src="defaultAvatar" />
+       <div class="w-10 h-10 text-4xl overflow-hidden rounded-full">🪐</div>
       </template>
     </div>
     <div class="ml-2">
       <h2 class="font-bold text-md">
-        {{ userInfo.name ?? '东哥' }}
+        {{ userInfo.name ?? 'chat' }}
       </h2>
       <p class="text-xs text-gray-500">
         <span
