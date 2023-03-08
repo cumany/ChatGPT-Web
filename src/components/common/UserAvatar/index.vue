@@ -1,6 +1,5 @@
 <script setup lang='ts'>
 import { computed } from 'vue'
-import { NAvatar } from 'naive-ui'
 import { useUserStore } from '@/store'
 
 import { isString } from '@/utils/is'
