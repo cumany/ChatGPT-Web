@@ -28,6 +28,9 @@ export default {
     exportImageConfirm: 'Are you sure to export this chat to png?',
     exportSuccess: 'Export Success',
     exportFailed: 'Export Failed',
+    usingContext: 'Context Mode',
+    turnOnContext: 'In the current mode, sending messages will carry previous chat records.',
+    turnOffContext: 'In the current mode, sending messages will not carry previous chat records.',
     deleteMessage: 'Delete Message',
     deleteMessageConfirm: 'Are you sure to delete this message?',
     deleteHistoryConfirm: 'Are you sure to clear this history?',
@@ -50,6 +53,7 @@ export default {
     reverseProxy: 'Reverse Proxy',
     timeout: 'Timeout',
     socks: 'Socks',
+    httpsProxy: 'HTTPS Proxy',
   },
 
 }
