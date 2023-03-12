@@ -13,10 +13,10 @@ const userInfo = computed(() => userStore.userInfo)
   <div class="flex items-center">
     <div class="w-10 h-10 text-4xl overflow-hidden rounded-full">
       <template v-if="isString(userInfo.avatar) && userInfo.avatar.length > 0">
-       {{ userInfo.avatar}}
+        {{ userInfo.avatar }}
       </template>
       <template v-else>
-      🪐
+        🪐
       </template>
     </div>
     <div class="ml-2">

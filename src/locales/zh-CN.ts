@@ -19,6 +19,7 @@ export default {
     placeholder: '来说点什么吧...（Shift + Enter = 换行）',
     placeholderMobile: '来说点什么...',
     copy: '复制',
+    edit: '编辑',
     copied: '复制成功',
     copyCode: '复制代码',
     clearChat: '清空会话',
@@ -31,6 +32,8 @@ export default {
     deleteMessageConfirm: '是否删除此消息?',
     deleteHistoryConfirm: '确定删除此记录?',
     clearHistoryConfirm: '确定清空聊天记录?',
+    saveAndSubmit: '保存并提交',
+    cancel: '取消',
   },
   setting: {
     setting: '设置',
